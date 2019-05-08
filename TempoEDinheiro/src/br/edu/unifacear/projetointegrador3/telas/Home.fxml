@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="paineHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.unifacear.projetointegrador3.controller.HomeController">
+	<children>
+		<MenuBar fx:id="menubarHome" prefHeight="22.0" prefWidth="774.0" style="-fx-background-color: #212121;">
+			<menus>
+				<Menu fx:id="menuArquivo" mnemonicParsing="false" style="-fx-background-color: #212121; -fx-text-fill: #FFFFFF;" text="Arquivo">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Close" />
+					</items>
+				</Menu>
+				<Menu fx:id="menuEditar" mnemonicParsing="false" style="-fx-background-color: #212121; -fx-text-fill: #FFFFFF;" text="Editar">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Delete" />
+					</items>
+				</Menu>
+				<Menu fx:id="menuAjuda" mnemonicParsing="false" style="-fx-background-color: #212121; -fx-text-fill: #FFFFFF;" text="Ajuda">
+					<items>
+						<MenuItem mnemonicParsing="false" text="About" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<Pane fx:id="paineLatEsq" layoutY="21.0" prefHeight="502.0" prefWidth="215.0" style="-fx-background-color: #212121;">
+			<children>
+				<Label fx:id="lblNomedoUsuario" layoutX="59.0" layoutY="24.0" style="-fx-text-fill: #FFFFFF;" text="Nome Usuario" />
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>
